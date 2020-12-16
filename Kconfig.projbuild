@@ -1,0 +1,47 @@
+menu "Thermostat config"
+
+config ONE_WIRE_GPIO
+    int "OneWire GPIO number"
+	range 0 34
+	default 5
+	help
+		GPIO number (IOxx) to access One Wire Bus.
+
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only so cannot be used to drive the One Wire Bus.
+		
+config HEATER_RELAY_GPIO
+	int "GPIO number for heater's relay"
+	range 0 34
+	default 25
+	help
+		GPIO number to controll relay's coil which turns ON/OFF heater.
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only so cannot be used to drive the relay.
+		
+config HEATER_LED_GPIO
+	int "GPIO number for led ON/OFF"
+	range 0 34
+	default 26
+	help
+		GPIO number for led which shows if heater is ON (led is ON) or OFF.
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only so cannot be used to drive the relay.
+
+config READY_LED_GPIO
+	int "GPIO number for led indicating ready/not ready state"
+	range 0 34
+	default 22
+	help
+		GPIO number for led which shows if heater is ON (led is ON) or OFF.
+		
+		Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used.
+
+		GPIOs 35-39 are input-only so cannot be used to drive the relay.
+
+endmenu

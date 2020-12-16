@@ -1,0 +1,45 @@
+Date:;Mon 14 Dec 2020 21:17:41 CET
+Tool:;Eeschema 5.1.6-c6e7f7d~86~ubuntu18.04.1
+Component Count:;41
+Ref;Value
+C1;100nF
+C2;10uF
+C3;220uF
+D1;LED
+D2;LED
+D3;1N5819
+H1;MountingHole
+H2;MountingHole
+H3;MountingHole
+H4;MountingHole
+J1;Screw_Terminal_01x02
+J4;Conn_1
+J5;Conn_1
+J8;Conn_1
+J9;Conn_1
+J10;Conn_1
+J11;Conn_1
+J12;Conn_1
+J16;Conn_1
+J17;Conn_1
+J18;Conn_1
+J19;Conn_1
+J20;Conn_1
+J21;Screw_Terminal_01x03
+J22;Screw_Terminal_01x02
+J23;Screw_Terminal_01x02
+PS1;HLK-PM01
+Q1;BC546
+R1;350
+R2;350
+R3;4k7
+R4;10k
+R5;10k
+R6;660
+R7;47 1%
+R8;1k
+RV1;250V
+SW1;SW_Push
+U1;ESP32_DevKitc_v4
+U2;EL817
+U3;RM85-2021-35-1005
