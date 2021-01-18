@@ -77,6 +77,6 @@ char timer_prop_dur_id[] = "duration";
 at_type_t timer_input_attype;
 double timer_duration_min = 1; //minutes
 double timer_duration_max = 600;
-char timer_duration_unit[] = "minutes";
+char timer_duration_unit[] = "min";
 
 #endif /* THERMOSTAT_PROP_H_ */
