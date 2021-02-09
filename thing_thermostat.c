@@ -72,9 +72,9 @@ enum_item_t enum_heating_on, enum_heating_off;
 enum_item_t enum_mode_on, enum_mode_off, enum_mode_auto;
 
 //set functions
-int8_t set_mode(char *new_value_str);
-int8_t set_target_temperature(char *new_value_str);
-int8_t set_hysteresis(char *new_value_str);
+int16_t set_mode(char *new_value_str);
+int16_t set_target_temperature(char *new_value_str);
+int16_t set_hysteresis(char *new_value_str);
 void on_time_set_fun(void);
 void update_on_time(bool);
 
@@ -206,7 +206,7 @@ inputs_error:
 *  < 0 - error
 *
 *******************************************************************/
-int8_t set_mode(char *new_value_str){
+int16_t set_mode(char *new_value_str){
 	int8_t res = -1;
 	char *prev_mode, *buff = NULL;
 	
@@ -300,7 +300,7 @@ int8_t set_mode(char *new_value_str){
 * set target temperature
 *
 *******************************************************************/
-int8_t set_target_temperature(char *new_value_str){
+int16_t set_target_temperature(char *new_value_str){
 	int8_t res = 0;
 	double prev_tt, tt;
 	
@@ -333,7 +333,7 @@ int8_t set_target_temperature(char *new_value_str){
  * called after http PUT method
  *
  * **************************************************************/
-int8_t set_hysteresis(char *new_value_str){
+int16_t set_hysteresis(char *new_value_str){
 	int8_t res = 0;
 	int new_hyst, vmin, vmax, prev_hyst;
 	
